@@ -1,0 +1,111 @@
+body{
+  background-color: lightblue;
+  margin: 0 auto;
+  }
+  #game-board{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .minion{
+    width: 100px;
+    height: 400px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0px;
+    margin: 0px 50px;
+    -webkit-border-top-left-radius: 50px;
+  -webkit-border-top-right-radius: 50px;
+  -moz-border-radius-topleft: 50px;
+  -moz-border-radius-topright: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  }
+  #minion1{
+    left: 50px;
+  }
+  #minion2{
+    left: 50%;
+    margin-left: -50px;
+  }
+  #minion3{
+    right: 50px;
+  }
+  .minion > .eye{
+    width: 60px;
+    height: 60px;
+    margin-left: 14px;
+    margin-top: 20px;
+    background: white;
+    border:5px solid black;
+    border-radius: 50%;
+ }
+ .deadline{
+   width: 100%;
+   height: 10px;
+   position: absolute;
+   bottom: 600px;
+   left: 0px;
+   background: darkviolet;
+ }
+ #result{
+   font-size: 40px;
+   width: 200px;
+   height: 60px;
+   color: darkgrey;
+   position: absolute;
+   left: 10px;
+   top: 10px;
+ }
+ #level{
+   font-size: 40px;
+   width: 200px;
+   height: 60px;
+   color: red;
+   position: absolute;
+   right: 10px;
+   top: 10px;
+ }
+ #overlay{
+   position: absolute;
+   z-index: 1000;
+   background: rgba(255,255,255, 0.5);
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+ }
+#startGame{
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  background: lightgrey;
+  position: absolute;
+  z-index: 1001;
+  top: 75px;
+  left: 50%;
+  margin-left: -200px;
+  border-radius: 25px;
+  border: 4px solid darkviolet;
+}
+#lostGame{
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  background: grey;
+  position: absolute;
+  z-index: 1001;
+  top: 35px;
+  left: 50%;
+  margin-left: -200px;
+  border-radius: 25px;
+  border: 4px solid violet;
+  display: none;
+}
+#startGame > button{
+  background: darkorange;
+  padding: 15px;
+  height: 15px;
+  width: 75px;
+  text-align: center;
+}

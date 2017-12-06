@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Smach zaidimas</title>
+    <link rel="stylesheet" href="smach.css">
+
+  </head>
+  <body>
+      <div id="overlay">
+        <div id="startGame">
+          <h1>Pradėti žaidimą spauskite start</h1>
+          <button type="button" name="button" onclick="start()">Start</button>
+        </div>
+        <div id="lostGame">
+          <h1>Tu pralaimėjai</h1>
+          <h2>Taškai:</h2>
+          <h1 id="lostResult"></h1>
+          <button type="button" name="button" onclick="reset()">Žaisti iš naujo</button>
+        </div>
+      </div>
+
+      <div id="result">
+        Result: 0
+
+      </div>
+      <div id="level">
+        Level: 1
+
+      </div>
+          <div id="game-board">
+      <div class="deadline">
+
+      </div>
+
+      <div class="minion" id="minion1" onclick="smach('minion1')">
+        <div class="eye">
+
+        </div>
+      </div>
+      <div class="minion" id="minion2" onclick="smach('minion2')">
+        <div class="eye">
+
+        </div>
+      </div>
+      <div class="minion" id="minion3" onclick="smach('minion3')">
+        <div class="eye">
+
+        </div>
+      </div>
+    </div>
+     <script type="text/javascript" src="smach.js"></script>
+  </body>
+</html>
